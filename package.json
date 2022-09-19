@@ -1,0 +1,16 @@
+{
+  "name": "filtersearchsort",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://devMoAli.github.io/Filter-Sort-Search",
+  "dependencies": {
+    "gh-pages": "^4.0.0"
+  }
+}
