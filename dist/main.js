@@ -184,6 +184,7 @@ document.getElementById("search").addEventListener("click", () => {
       cards[index].classList.add("hide");
     }
   });
+ 
 })
 
 // Initially display all products onload
