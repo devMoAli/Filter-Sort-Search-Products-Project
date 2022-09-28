@@ -6,48 +6,26 @@
 
     <link rel="stylesheet" type="text/css" href="style.css" />
     <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
-    <style>
-		
-			#container {
-				display: grid;
-				grid-template-columns: repeat(4, 1fr);
-			}
-
-			#container > div {
-				display: flex;
-				flex-direction: column;
-				margin-bottom: 40px;
-				align-items: center;
-			}
-			#container > div:hover {
-				box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-			}
-
-	
-          
-		</style>
   </head>
   <body>
     <header>
-      
       <div class="head">
-       
-        
         <div class="search-container">
           <input
             type="search"
             id="search-input"
-            placeholder="Search Products" />
+            placeholder="Search Products"
+          />
           <button id="search">
             <iconify-icon
               id="searchIcon"
               icon="bx:search-alt"
-              style="color: rgb(247, 243, 243)"></iconify-icon>
+              style="color: rgb(247, 243, 243)"
+            ></iconify-icon>
           </button>
         </div>
-        
-        <div class="priceFilter">
 
+        <div class="priceFilter">
           <select name="select" id="select" onchange="myFunction(this)">
             <option value="Default">Price Filter</option>
             <option value="l2h">Low to high</option>
@@ -55,13 +33,14 @@
           </select>
         </div>
       </div>
-      
+
       <div class="wrapper">
         <div id="buttons">
           <button
             class="button-value"
             id="first"
-            onclick="filterProduct('all')">
+            onclick="filterProduct('all')"
+          >
             All
           </button>
           <button class="button-value" onclick="filterProduct('Suits')">
@@ -80,13 +59,10 @@
       </div>
     </header>
     <main>
-    
       <div id="productsData"></div>
       <div id="container"></div>
-   
-     
     </main>
-   
+
     <script type="text/javascript" src="main.js"></script>
   </body>
 </html>

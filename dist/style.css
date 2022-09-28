@@ -136,6 +136,20 @@ header {
   width: 70px;
   height: 33px;
 }
+#container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+#container > div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+  align-items: center;
+}
+#container > div:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
 
 #productsData {
   display: grid;

@@ -193,21 +193,21 @@ window.onload = () => {
 };
 // ------------------------------------------------------
 // Sorting ASC / DSC
-var container = document.querySelector("#container");
+let container = document.querySelector("#container");
 
 function sortProducts(productsData) {
 		
   productsData.forEach(function (i) {
 
-    var div = document.createElement("div");
+    let div = document.createElement("div");
 
-    var name = document.createElement("h4");
+    let name = document.createElement("h4");
     name.innerHTML = i.productName;
 
-    var price = document.createElement("h5");
+    let price = document.createElement("h5");
     price.innerHTML = i.price;
 
-    var image = document.createElement("img");
+    let image = document.createElement("img");
     image.src = i.image;
     
     div.append(image, name, price);
@@ -216,7 +216,7 @@ function sortProducts(productsData) {
   });
 }
 function myFunction(select) {
-  var x = document.getElementById("select").value;
+  let x = document.getElementById("select").value;
 
   if (x == "l2h") {
      l2h(productsData);
